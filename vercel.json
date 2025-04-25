@@ -6,5 +6,6 @@
 			"src": "(.*)",
 			"dest": "src/server.ts"
 		}
-	]
+	],
+	"includeFiles": ["database/app.db"]
 }
