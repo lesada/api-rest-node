@@ -6,7 +6,8 @@
 	"scripts": {
 		"lint": "biome format --write ./src",
 		"dev": "tsx watch ./src/server.ts",
-		"knex": "node --import tsx ./node_modules/knex/bin/cli.js --knexfile knexfile.ts"
+		"knex": "node --import tsx ./node_modules/knex/bin/cli.js --knexfile knexfile.ts",
+		"test": "vitest"
 	},
 	"keywords": [],
 	"author": "",
@@ -14,8 +15,11 @@
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
 		"@types/node": "^22.15.0",
+		"@types/supertest": "^6.0.3",
+		"supertest": "^7.1.0",
 		"tsx": "^4.19.3",
-		"typescript": "^5.8.3"
+		"typescript": "^5.8.3",
+		"vitest": "^3.1.2"
 	},
 	"dependencies": {
 		"@fastify/cookie": "^11.0.2",
