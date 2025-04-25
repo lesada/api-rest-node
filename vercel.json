@@ -1,11 +1,18 @@
 {
 	"version": 2,
-	"builds": [{ "src": "src/server.ts", "use": "@vercel/node" }],
+	"builds": [
+		{
+			"src": "src/server.ts",
+			"use": "@vercel/node",
+			"config": {
+				"includeFiles": ["database/app.db"]
+			}
+		}
+	],
 	"routes": [
 		{
 			"src": "(.*)",
 			"dest": "src/server.ts"
 		}
-	],
-	"includeFiles": ["database/app.db"]
+	]
 }
