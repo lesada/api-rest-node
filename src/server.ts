@@ -1,4 +1,6 @@
 import fastify from "fastify";
+import { env } from "./env";
+import { transactionsRoutes } from "./routes/transactions";
 
 const app = fastify();
 
@@ -7,6 +9,8 @@ app.get("/health", async () => {
 		status: "ok",
 	};
 });
+
+app.register(transactionsRoutes, { prefix: "/transactions" });
 
 app
 	.listen({
