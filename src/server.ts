@@ -10,8 +10,8 @@ app.get("/health", async () => {
 
 app
 	.listen({
-		port: 3333,
+		port: env.PORT,
 	})
 	.then(() => {
-		console.log("HTTP Server Running in 3333 👾");
+		console.log(`HTTP Server Running in ${env.PORT} 👾`);
 	});
