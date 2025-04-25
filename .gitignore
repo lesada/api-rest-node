@@ -2,3 +2,5 @@ node_modules
 /database/app.db
 /database/test.db
 .env
+.vercel
+.env.dev
