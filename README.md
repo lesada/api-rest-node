@@ -22,7 +22,7 @@
 ### Clone the application
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio-api.git
+git clone https://github.com/lesada/api-rest-node.git
 ```
 
 ### Running the project
@@ -43,6 +43,7 @@ pnpm install
 DATABASE_CLIENT=pg
 DATABASE_URL=postgresql://username:password@host:port/database
 PORT=3333
+NODE_ENV="production"
 ```
 
 - Create a `.env.dev` file based on `.env.example` and configure your dev database connection (mostly using sqlite):
@@ -51,6 +52,7 @@ PORT=3333
 DATABASE_CLIENT=sqlite
 DATABASE_URL=folder/file
 PORT=3333
+NODE_ENV="development"
 ```
 
 - Start the application:
